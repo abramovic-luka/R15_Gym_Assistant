@@ -1,0 +1,40 @@
+CREATE TABLE `Accounts` (
+	`Ime`	Text,
+	`Prezime`	Text,
+	`Username`	Text,
+	`Password`	Text,
+	`Visina`	Text,
+	`Tezina`	Text,
+	`Gradja`	Text,
+	`Vrsta`	Text,
+	PRIMARY KEY(`Username`)
+);
+
+CREATE TABLE `Prehrana` (
+	`ID`	INTEGER,
+	`Obrok`	TEXT,
+	`KolProteina`	TEXT,
+	PRIMARY KEY(`ID`)
+);
+
+CREATE TABLE `Program` (
+	`ID`	INTEGER,
+	`Naziv`	TEXT,
+	`PutaTjedno`	TEXT,
+	PRIMARY KEY(`ID`)
+);
+
+CREATE TABLE `Workouts` (
+	`ID`	INTEGER,
+	`Naziv`	TEXT,
+	`DioTijela`	TEXT,
+	`BrojSerija`	TEXT,
+	`BrojPonavljanja`	TEXT,
+	`Naputak`	TEXT,
+	PRIMARY KEY(`ID`)
+);
+
+CREATE TABLE `sqlite_sequence` (
+	`name`	TEXT,
+	`seq`	TEXT
+);
