@@ -70,7 +70,7 @@ namespace R15_Gym_Assistant
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            string txtQuery = "UPDATE Accounts SET Password='" + textPassword.Text + "', Visina='" + textVisina.Text + "', Tezina='" + textTezina.Text + "', Gradja='" + comboGradja.Text + "', Vrsta='" + comboVrsta.Text + "'  WHERE Username='" + textPassword.Text + "' ";
+            string txtQuery = "UPDATE Accounts SET Password='" + textPassword.Text + "', Visina='" + textVisina.Text + "', Tezina='" + textTezina.Text + "', Gradja='" + comboGradja.Text + "', Vrsta='" + comboVrsta.Text + "'  WHERE Username='" + textUsername.Text + "' ";
             ExecuteQuery(txtQuery);
             LoadData();
         }
